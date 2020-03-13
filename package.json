@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build": "node-sass src/scss/main.scss public/css/main.css",
+    "build": "node-sass --output-style compressed src/scss/main.scss public/css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon -e scss -x \"npm run build\""
+    "watch": "nodemon -e scss -x \"node-sass --output-style expanded src/scss/main.scss public/css/main.css\""
   },
   "author": "",
   "license": "ISC",
