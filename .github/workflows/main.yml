@@ -9,12 +9,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - name: Checking out repo
+      uses: actions/checkout@master
+
     - name: Install JavaScript Dependencies
       run: |
         npm ci
 
-    - name: Lint JavaScript
+    - name: Build JavaScript
       run: |
         npm run build
 
@@ -22,7 +24,8 @@ jobs:
       run: |
         rm -rf .github src package* node_modules .git*
 
-    - uses: jakejarvis/s3-sync-action@master
+    - name: Deploy to S3
+      uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl public-read --follow-symlinks --delete
       env:
