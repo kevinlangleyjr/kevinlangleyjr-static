@@ -1,3 +1,5 @@
+@import "./variables";
+
 body {
 	margin: 0;
 	padding: 0;
@@ -5,8 +7,8 @@ body {
 }
 
 ::selection {
-	background-color: #1b1b1b;
-	color: #efefef;
+	background-color: $color-dark-grey;
+	color: $color-off-white;
 }
 
 a {
@@ -15,7 +17,7 @@ a {
 }
 
 section {
-	background-color: #1b1b1b;
+	background-color: $color-dark-grey;
 	height: 100vh;
 	display: flex;
 
@@ -30,7 +32,7 @@ section {
 		h1 {
 			display: block;
 			font-size: 7rem;
-			color: #efefef;
+			color: $color-off-white;
 			width: 100%;
 			text-transform: uppercase;
 			font-weight: 600;
@@ -48,7 +50,7 @@ section {
 					animation: fromBottom 1s 0.25s ease both;
 					font-size: 1rem;
 					margin-left: 10px;
-					background-color: #1b1b1b;
+					background-color: $color-dark-grey;
 				}
 
 				a {
@@ -134,7 +136,7 @@ section {
 		width: 0;
 	}
 	100% {
-		width: 50px;
+		width: $link-underline-width;
 	}
 }
 
@@ -143,7 +145,7 @@ section {
 		width: 0;
 	}
 	100% {
-		width: 50px;
+		width: $link-underline-width;
 	}
 }
 
@@ -152,7 +154,7 @@ section {
 		width: 0;
 	}
 	100% {
-		width: 50px;
+		width: $link-underline-width;
 	}
 }
 
@@ -161,6 +163,6 @@ section {
 		width: 0;
 	}
 	100% {
-		width: 50px;
+		width: $link-underline-width;
 	}
 }
