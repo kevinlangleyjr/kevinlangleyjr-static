@@ -9,7 +9,7 @@
     "watch": "nodemon -e scss -x \"node-sass --output-style expanded src/scss/main.scss public/css/main.css\""
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "devDependencies": {
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2"
