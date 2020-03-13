@@ -1,0 +1,166 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+::selection {
+	background-color: #1b1b1b;
+	color: #efefef;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+section {
+	background-color: #1b1b1b;
+	height: 100vh;
+	display: flex;
+
+	.content {
+		width: 100%;
+		align-self: center;
+		transform: translateY(-50px);
+		margin: 0 10%;
+		overflow: hidden;
+		padding-bottom: 10px;
+
+		h1 {
+			display: block;
+			font-size: 7rem;
+			color: #efefef;
+			width: 100%;
+			text-transform: uppercase;
+			font-weight: 600;
+			letter-spacing: 0.25rem;
+			overflow: hidden;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+
+			span {
+				display: block;
+				transform: translateX(-100%);
+				animation: fromBottom 1s ease both;
+
+				&:last-child {
+					animation: fromBottom 1s 0.25s ease both;
+					font-size: 1rem;
+					margin-left: 10px;
+					background-color: #1b1b1b;
+				}
+
+				a {
+					position: relative;
+					display: inline-block;
+					margin-left: 0.5rem;
+					text-decoration: none;
+					color: #72a4d4;
+
+					&::after {
+						content: "";
+						height: 2px;
+						background-color: #72a4d4;
+						position: absolute;
+						bottom: -10px;
+						left: 0;
+						width: 0;
+						animation: linkUnderline 0.5s 1s ease both;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media ( min-width: 480px ) {
+	section .content {
+		max-width: 80%;
+	}
+}
+
+@media ( min-width: 760px ) {
+	section .content h1 span:last-child {
+		font-size: 2rem;
+	}
+}
+
+@media ( min-width: 1200px ) {
+	section .content {
+		max-width: 1140px;
+		margin: 0 auto;
+	}
+}
+
+@-moz-keyframes fromBottom {
+	0% {
+		transform: translateY( 150% );
+	}
+	100% {
+		transform: translateY( 0 );
+	}
+}
+
+@-webkit-keyframes fromBottom {
+	0% {
+		transform: translateY( 150% );
+	}
+	100% {
+		transform: translateY( 0 );
+	}
+}
+
+@-o-keyframes fromBottom {
+	0% {
+		transform: translateY( 150% );
+	}
+	100% {
+		transform: translateY( 0 );
+	}
+}
+
+@keyframes fromBottom {
+	0% {
+		transform: translateY( 150% );
+	}
+	100% {
+		transform: translateY( 0 );
+	}
+}
+
+@-moz-keyframes linkUnderline {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 50px;
+	}
+}
+
+@-webkit-keyframes linkUnderline {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 50px;
+	}
+}
+
+@-o-keyframes linkUnderline {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 50px;
+	}
+}
+
+@keyframes linkUnderline {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 50px;
+	}
+}
