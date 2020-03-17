@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 
 body {
 	margin: 0;
@@ -22,24 +22,25 @@ section {
 	display: flex;
 
 	.content {
-		width: 100%;
 		align-self: center;
-		transform: translateY(-50px);
-		margin: 0 10%;
+		margin: 0 auto;
+		max-width: 80%;
 		overflow: hidden;
 		padding-bottom: 10px;
+		transform: translateY(-50px);
+		width: 100%;
 
 		h1 {
 			display: block;
-			font-size: 7rem;
+			font-size: 1.75rem;
 			color: $color-off-white;
 			width: 100%;
 			text-transform: uppercase;
 			font-weight: 600;
 			letter-spacing: 0.25rem;
 			overflow: hidden;
-			padding-top: 1rem;
-			padding-bottom: 1rem;
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
 
 			span {
 				display: block;
@@ -48,8 +49,8 @@ section {
 
 				&:last-child {
 					animation: fromBottom 1s 0.25s ease both;
-					font-size: 1rem;
-					margin-left: 10px;
+					font-size: 0.5rem;
+					margin-left: 1%;
 					background-color: $color-dark-grey;
 				}
 
@@ -65,7 +66,7 @@ section {
 						height: 2px;
 						background-color: #72a4d4;
 						position: absolute;
-						bottom: -10px;
+						bottom: -6px;
 						left: 0;
 						width: 0;
 						animation: linkUnderline 0.5s 1s ease both;
@@ -73,96 +74,14 @@ section {
 				}
 			}
 		}
+
+		&.error {
+			h1 {
+				text-align: center;
+			}
+		}
 	}
 }
 
-@media ( min-width: 480px ) {
-	section .content {
-		max-width: 80%;
-	}
-}
-
-@media ( min-width: 760px ) {
-	section .content h1 span:last-child {
-		font-size: 2rem;
-	}
-}
-
-@media ( min-width: 1200px ) {
-	section .content {
-		max-width: 1140px;
-		margin: 0 auto;
-	}
-}
-
-@-moz-keyframes fromBottom {
-	0% {
-		transform: translateY( 150% );
-	}
-	100% {
-		transform: translateY( 0 );
-	}
-}
-
-@-webkit-keyframes fromBottom {
-	0% {
-		transform: translateY( 150% );
-	}
-	100% {
-		transform: translateY( 0 );
-	}
-}
-
-@-o-keyframes fromBottom {
-	0% {
-		transform: translateY( 150% );
-	}
-	100% {
-		transform: translateY( 0 );
-	}
-}
-
-@keyframes fromBottom {
-	0% {
-		transform: translateY( 150% );
-	}
-	100% {
-		transform: translateY( 0 );
-	}
-}
-
-@-moz-keyframes linkUnderline {
-	0% {
-		width: 0;
-	}
-	100% {
-		width: $link-underline-width;
-	}
-}
-
-@-webkit-keyframes linkUnderline {
-	0% {
-		width: 0;
-	}
-	100% {
-		width: $link-underline-width;
-	}
-}
-
-@-o-keyframes linkUnderline {
-	0% {
-		width: 0;
-	}
-	100% {
-		width: $link-underline-width;
-	}
-}
-
-@keyframes linkUnderline {
-	0% {
-		width: 0;
-	}
-	100% {
-		width: $link-underline-width;
-	}
-}
+@import './responsive';
+@import './animations';

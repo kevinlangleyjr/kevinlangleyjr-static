@@ -1,0 +1,71 @@
+@-moz-keyframes fromBottom {
+	0% {
+		transform: translateY( 150% );
+	}
+	100% {
+		transform: translateY( 0 );
+	}
+}
+
+@-webkit-keyframes fromBottom {
+	0% {
+		transform: translateY( 150% );
+	}
+	100% {
+		transform: translateY( 0 );
+	}
+}
+
+@-o-keyframes fromBottom {
+	0% {
+		transform: translateY( 150% );
+	}
+	100% {
+		transform: translateY( 0 );
+	}
+}
+
+@keyframes fromBottom {
+	0% {
+		transform: translateY( 150% );
+	}
+	100% {
+		transform: translateY( 0 );
+	}
+}
+
+@-moz-keyframes linkUnderline {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: $link-underline-width;
+	}
+}
+
+@-webkit-keyframes linkUnderline {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: $link-underline-width;
+	}
+}
+
+@-o-keyframes linkUnderline {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: $link-underline-width;
+	}
+}
+
+@keyframes linkUnderline {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: $link-underline-width;
+	}
+}

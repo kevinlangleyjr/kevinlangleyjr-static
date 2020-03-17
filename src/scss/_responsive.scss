@@ -1,0 +1,23 @@
+@media ( min-width: 767px ) {
+	section .content h1 span {
+		font-size: 3.75rem;
+
+		&:last-child {
+			font-size: 1.35rem;
+		}
+	}
+}
+
+@media ( min-width: 1200px ) {
+	section .content {
+		max-width: 1140px;
+
+		h1 span {
+			font-size: 4.85rem;
+
+			&:last-child {
+				font-size: 1.75rem;
+			}
+		}
+	}
+}
