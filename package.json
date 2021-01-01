@@ -5,13 +5,12 @@
   "main": "index.html",
   "scripts": {
     "build": "node-sass --output-style compressed src/scss/main.scss public/css/main.css",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon -e scss -x \"node-sass --output-style expanded src/scss/main.scss public/css/main.css\""
   },
   "author": "",
   "license": "GPL-3.0",
   "devDependencies": {
-    "node-sass": "^4.13.1",
+    "node-sass": "^5.0.0",
     "nodemon": "^2.0.2"
   }
 }
