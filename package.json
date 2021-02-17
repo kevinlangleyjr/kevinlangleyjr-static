@@ -7,7 +7,7 @@
     "build": "node-sass --output-style compressed src/scss/main.scss public/css/main.css",
     "watch": "nodemon -e scss -x \"node-sass --output-style expanded src/scss/main.scss public/css/main.css\""
   },
-  "author": "",
+  "author": "Kevin Langley Jr.",
   "license": "GPL-3.0",
   "devDependencies": {
     "node-sass": "^5.0.0",
